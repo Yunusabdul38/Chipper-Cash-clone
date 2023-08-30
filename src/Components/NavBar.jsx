@@ -1,17 +1,28 @@
+import { useState } from "react";
 import Logo from "../assets/chipperCash.svg";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faChevronDown,faXmark,faBars } from "@fortawesome/free-solid-svg-icons";
+
+const downIcon = <FontAwesomeIcon icon={faChevronDown} />
+const xIcon = <FontAwesomeIcon icon={faXmark} />
+const barsIcon = <FontAwesomeIcon icon={faBars} />
 
 function NavBar() {
+  const [showMenu,setShowMenu] =useState(false)
+
   return (
-    <nav className="bg-[#393589] text-white flex sm:justify-start xl:justify-between items-center xl:px-24 xl:py-4 capitalize sm:flex-col xl:flex-row ">
+    <nav className="bg-[#202654] text-white items-start flex justify-between flex-col md:items-center px-5 py-5 md:px-24 md:py-4 capitalize md:flex-row fixed w-full gap-7 md:gap-0">
       <img src={Logo} alt="chipper cash logo" className="w-28 text-[#393589] img"/>
-      <ul className="flex justify-between items-center gap-3">
-        
-        <li>products</li>
-        <li>company</li>
+      <ul className={`md:flex justify-start md:justify-between md:flex-row flex-col md:items-center gap-3 items-start md:h-auto w-full md:w-auto ${showMenu?"flex h-screen":"hidden h-0"} transition-all ease-linear delay-500`}>
+        <li className="w-full md:w-auto">products<span className="float-right md:float-none md:ml-3">{downIcon}</span></li>
+        <li className="w-full md:w-auto">company <span className="float-right md:float-none md:ml-3">{downIcon}</span></li>
         <li>blogs</li>
         <li>supports</li>
-        <button className="capitalize border-solid border-gray-500 border-[1px] px-4 py-2 rounded-[10px] ">download</button>
+        <button className="transition-all ease-linear duration-150 delay-0 hover:bg-[#393589] capitalize border-solid border-gray-500 border-[1px] px-4 py-2 rounded-[10px]">download</button>
       </ul>
+      <div className="md:hidden absolute top-4 right-5 text-3xl" onClick={()=>{
+        setShowMenu(prev=>!prev)
+      }}>{showMenu?xIcon:barsIcon}</div>
     </nav>
   );
 }
