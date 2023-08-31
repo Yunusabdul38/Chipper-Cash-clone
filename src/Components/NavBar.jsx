@@ -11,8 +11,8 @@ function NavBar() {
   const [showMenu,setShowMenu] =useState(false)
 
   return (
-    <nav className="bg-[#202654] text-white items-start flex justify-between flex-col md:items-center px-5 py-5 md:px-24 md:py-4 capitalize md:flex-row fixed w-full gap-7 md:gap-0">
-      <img src={Logo} alt="chipper cash logo" className="w-28 text-[#393589] img"/>
+    <nav className="bg-[#202654] text-white items-start flex justify-between flex-col md:items-center px-5 py-5 md:px-24 md:py-4 capitalize md:flex-row fixed w-full gap-7 md:gap-0 top-0">
+      <img src={Logo} alt="chipper cash logo" className="w-28 text-[#393589]"/>
       <ul className={`md:flex justify-start md:justify-between md:flex-row flex-col md:items-center gap-3 items-start md:h-auto w-full md:w-auto ${showMenu?"flex h-screen":"hidden h-0"} transition-all ease-linear delay-500`}>
         <li className="w-full md:w-auto">products<span className="float-right md:float-none md:ml-3">{downIcon}</span></li>
         <li className="w-full md:w-auto">company <span className="float-right md:float-none md:ml-3">{downIcon}</span></li>
