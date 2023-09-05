@@ -74,7 +74,9 @@ function Section() {
           <h1 className="text-[#1b0a2d] text-2xl font-semibold">
             Football Culture Across Africa
           </h1>
-          <p className="text-purple-600 font-semibold">Take a photographic journey</p>
+          <p className="text-purple-600 font-semibold">
+            Take a photographic journey
+          </p>
         </div>
       </section>
     </div>

@@ -1,3 +1,4 @@
+import TopSection from "./TopSection";
 function Showcase() {
   return (
     <>
@@ -37,6 +38,7 @@ function Showcase() {
           srcSet="https://global-uploads.webflow.com/63c81b0c3ad929013f062d70/646f10177899cb677d8e7510_Group%203705-p-500.webp 500w, https://global-uploads.webflow.com/63c81b0c3ad929013f062d70/646f10177899cb677d8e7510_Group%203705-p-800.webp 800w, https://global-uploads.webflow.com/63c81b0c3ad929013f062d70/646f10177899cb677d8e7510_Group%203705-p-1080.webp 1080w, https://global-uploads.webflow.com/63c81b0c3ad929013f062d70/646f10177899cb677d8e7510_Group%203705.webp 1568w"
         />
       </section>
+      <TopSection />
     </>
   );
 }
