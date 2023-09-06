@@ -1,5 +1,6 @@
 import { useState } from "react";
-import ProductNavBar from "./ProductNavBar"
+import ProductNavBar from "./ProductNavBar";
+import CompanyNavBar from "./CompanyNavBar";
 import Logo from "./assets/chipperCash.svg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronDown,faXmark,faBars } from "@fortawesome/free-solid-svg-icons";
@@ -11,9 +12,14 @@ const barsIcon = <FontAwesomeIcon icon={faBars}/>
 function NavBar() {
   const [showMenu,setShowMenu] =useState(false)
   const [showProduct, setShowProduct] = useState(false)
-
+  const [showCompany, setShowCompany] = useState(false)
   function showProducthandle(){
     setShowProduct(prev=>!prev)
+    setShowCompany(false)
+  }
+  function showCompanyHandle(){
+    setShowCompany(prev=>!prev)
+    setShowProduct(false)
   }
   return (
     <nav className={`${showMenu?"h-screen":"h-16"} bg-[#202654] text-white items-start flex justify-between flex-col md:items-center px-5 py-5 md:px-28 md:py-4 capitalize md:flex-row fixed w-full gap-7 md:gap-0 top-0 transition-all ease-out`}>
@@ -23,7 +29,10 @@ function NavBar() {
           <div>products<span className="float-right md:float-none md:ml-3">{downIcon}</span></div>
           {showProduct && <ProductNavBar/>}
         </li>
-        <li className="w-full md:w-auto">company <span className="float-right md:float-none md:ml-3">{downIcon}</span></li>
+        <li className="w-full md:w-auto " onClick={showCompanyHandle}>
+          <div>company <span className="float-right md:float-none md:ml-3">{downIcon}</span></div>
+          {showCompany && <CompanyNavBar />}
+        </li>
         <li>blogs</li>
         <li>supports</li>
         <button className="transition-all ease-linear duration-150 delay-0 hover:bg-[#393589] capitalize border-solid border-gray-500 border-[1px] px-4 py-2 rounded-[10px]">download</button>
