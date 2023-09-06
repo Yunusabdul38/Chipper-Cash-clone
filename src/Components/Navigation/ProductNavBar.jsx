@@ -1,6 +1,6 @@
 function ProductNavBar() {
   return (
-    <nav className="rounded-3xl md:p-5 sm:p-5 md:bg-white bg-[#202654] md:grid-cols-3 sm:grid-cols-2 text-white h-[400px] overflow-y-scroll grid gap-5">
+    <nav className="w-full mt-2 md:mt-12 md:fixed md:right-20 rounded-3xl md:p-5 sm:p-5 md:bg-white bg-[#202654] md:grid-cols-3 sm:grid-cols-2 text-white h-[400px] overflow-y-scroll grid gap-5 md:max-w-[60%] md:overflow-hidden border">
       <section>
        <div className="grid gap-1">
        <h3 className="capitalize mb-3 text-[#c1c4e5] md:text-[#637e9e] text-sm ">payment</h3>
