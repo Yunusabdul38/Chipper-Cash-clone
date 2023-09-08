@@ -34,7 +34,7 @@ function HeaderTopSection(){
           </button>
         </div>
         <div
-          className="hidden bg-no-repeat bg-auto img md:block md:h-[550px] md:w-3/4 bg-cover"
+          className="hidden bg-no-repeat img md:block md:h-[550px] md:w-3/4 bg-cover"
           style={{ backgroundImage: `url(${headerImage})` }}
         ></div>
       </section>
