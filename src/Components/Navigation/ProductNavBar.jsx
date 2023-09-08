@@ -1,6 +1,5 @@
 import ProductNavCategory from "./ProductNavCategory";
 import Card from "../../UI/Card";
-import { data } from "autoprefixer";
 const productDataList = [
   {
     name: "payment",

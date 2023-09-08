@@ -1,3 +1,11 @@
+import PropTypes from "prop-types"
+
+NavList.propTypes={
+  img:PropTypes.string,
+  maintext:PropTypes.string,
+  subtext:PropTypes.string,
+  imgalt:PropTypes.string
+}
 function NavList({img,maintext,subtext,imgalt}){
     return(
         <div className="flex gap-2">

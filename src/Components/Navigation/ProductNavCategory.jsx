@@ -1,5 +1,10 @@
 import NavList from "./NavList";
+import PropTypes from "prop-types"
 
+ProductNavCategory.propTypes={
+  categoryName:PropTypes.string,
+  content:PropTypes.array,
+}
 function ProductNavCategory({ categoryName, content}) {
   return (
       <section className="grid gap-1">
