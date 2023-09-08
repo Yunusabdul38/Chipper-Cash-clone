@@ -7,7 +7,7 @@ const appleIcon = <FontAwesomeIcon icon={faAppleAlt} />;
 function TopSection() {
   return (
     <>
-      <section className="mt-10 md:px-48">
+      <section className="mb-20 mt-10 md:px-48">
         <div className=" px-5 pt-10 md:px-24 md:py-4 text-center">
           <h1 className="text-[#1b0a2d] text-2xl font-semibold">
             It’s the connections between us that power Chipper Cash
@@ -17,7 +17,7 @@ function TopSection() {
             possibilities of what we can achieve together are endless.
           </p>
         </div>
-        <div className="h-[500px] bg-center border bg-style" style={{backgroundImage:`url(${bgImage})`}}>
+        <div className="h-[500px] bg-center  bg-style" style={{backgroundImage:`url(${bgImage})`}}>
         <img
           src="https://global-uploads.webflow.com/63c81b0c3ad929013f062d70/63c81b0c3ad9297964062de0_chipper-connections-p-800.jpg"
           className="px-5 py-10 rounded-[50px] mx-auto"
