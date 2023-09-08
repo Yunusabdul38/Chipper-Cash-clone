@@ -1,9 +1,12 @@
 import Logo from "./assets/chipperCash.svg";
+import TopFooterSection from "./TopFooterSection";
 import Images from "../../UI/Images";
 function Footer() {
   return (
-    <footer className="text-[#c1c4e5] capitalize px-5 pt-48 md:px-24 pb-7 md:py-4 bg-[#202654] grid gap-8">
-      <div className="grid gap-4">
+    <footer className="mt-72 text-[#c1c4e5] capitalize px-5 pt-48 md:px-24 pb-7  bg-[#202654] grid gap-8">
+      <TopFooterSection />
+      <div className="border-b-[1px] border-[#c1c4e5] grid gap-8 md:flex md:justify-between">
+      <div className="grid gap-4 md:gap-0">
         <img src={Logo} alt="chipper cash logo" className="w-28" />
         <ul className="flex  gap-4 ">
           <li>product</li>
@@ -12,18 +15,21 @@ function Footer() {
           <li>terms</li>
         </ul>
       </div>
-      <div className="grid gap-4 pb-8 border-b-[1px] border-[#c1c4e5]">
-        <h1 className="text-white text-xl font-semibold">how can we help</h1>
+      <div className="grid gap-4 pb-8">
+        <h1 className="text-white text-xl font-semibold md:text-right">how can we help</h1>
+        <div className="grid gap-4 md:flex">
         <h3 className="">help docs & FAQs</h3>
         <h5>support via in-app chat</h5>
+        </div>
       </div>
-      <div className="grid gap-4">
-        <p>product availability may vary by market.</p>
-        <p>
+      </div>
+      <div className="grid gap-4 md:flex md:justify-between md:items-center">
+        <p className="md:order-2">product availability may vary by market.</p>
+        <p className="md:order-1">
           c 2021-2023 critical ideas, inc <br /> voyse technologies us, inc.
           NMLS ID: 2266748
         </p>
-        <div className="inline-flex gap-4">
+        <div className="inline-flex gap-4 md:order-3">
           <span>follow us:</span>
           <Images
             img="data:image/svg+xml,%3Csvg%20width%3D%22currentWidth%22%20height%3D%22currentHeight%22%20viewBox%3D%220%200%2018%2018%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20d%3D%22M18%201.92857V16.0714C18%2017.1362%2017.1362%2018%2016.0714%2018H12.6442V10.8804H15.079L15.4286%208.16429H12.6442V6.42857C12.6442%205.64107%2012.8612%205.1067%2013.9902%205.1067H15.4286V2.67991C15.1795%202.64777%2014.3277%202.57143%2013.3313%202.57143C11.258%202.57143%209.83571%203.83705%209.83571%206.16339V8.1683H7.39286V10.8844H9.83973V18H1.92857C0.863839%2018%200%2017.1362%200%2016.0714V1.92857C0%200.863839%200.863839%200%201.92857%200H16.0714C17.1362%200%2018%200.863839%2018%201.92857Z%22%20fill%3D%22currentColor%22%20fill-opacity%3D%220.7%22%3E%3C%2Fpath%3E%0A%3C%2Fsvg%3E"

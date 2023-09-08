@@ -1,4 +1,4 @@
-import NavList from "./NavList";
+import Wrapper from "../../UI/Wrapper";
 import PropTypes from "prop-types"
 
 ProductNavCategory.propTypes={
@@ -12,7 +12,7 @@ function ProductNavCategory({ categoryName, content}) {
           {categoryName}
         </h3>
         <section className="grid gap-6">
-         {content.map(data =>  <NavList
+         {content.map(data =>  <Wrapper
             img={data.img}
             maintext={data.maintext}
             subtext={data.subtext}

@@ -1,14 +1,15 @@
 import PropTypes from "prop-types"
 
-NavList.propTypes={
+Wrapper.propTypes={
   img:PropTypes.string,
   maintext:PropTypes.string,
   subtext:PropTypes.string,
-  imgalt:PropTypes.string
+  imgalt:PropTypes.string,
+  style:PropTypes.string
 }
-function NavList({img,maintext,subtext,imgalt}){
+function Wrapper({img,maintext,subtext,imgalt,style}){
     return(
-        <div className="flex gap-2">
+        <div className={`${style} flex gap-2`}>
           <img src={img} alt={imgalt} className="w-7"/>
           <div className="grid gap-1">
             <p className="md:text-lg capitalize text-xl md:text-[#160042]">{maintext}</p>
@@ -17,4 +18,4 @@ function NavList({img,maintext,subtext,imgalt}){
         </div>
     )
 }
-export default NavList
+export default Wrapper

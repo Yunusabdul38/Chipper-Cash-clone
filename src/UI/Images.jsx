@@ -7,7 +7,7 @@ Images.propTypes={
 }
 function Images({style,img,alt}){
     return(
-        <img className={`w-[5%] ${style}`} src={img} alt={alt}/>
+        <img className={`w-[20px] ${style}`} src={img} alt={alt}/>
     )
 }
 export default Images

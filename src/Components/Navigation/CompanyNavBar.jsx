@@ -1,5 +1,5 @@
 import Card from "../../UI/Card";
-import NavList from "./NavList";
+import Wrapper from "../../UI/Wrapper";
 
 const companyDataList = [
   {
@@ -29,7 +29,7 @@ function CompanyNavBar() {
   return (
     <Card style="gap-5 w-[400px] md:right-52 md:mt-8">
       {companyDataList.map((data) => (
-        <NavList
+        <Wrapper
           img={data.img}
           maintext={data.maintext}
           subtext={data.subtext}
