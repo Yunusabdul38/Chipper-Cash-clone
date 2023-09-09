@@ -1,35 +1,38 @@
 import TopSection from "./TopSection";
+import SectionCard from "../../UI/SectionCard";
+import SideTextCard from "../../UI/SideTextCard";
 function Showcase() {
   return (
     <>
-      <section className="md:flex md:justify-between md:items-center bg-white px-5 py-10 md:px-24 md:py-4">
+      <SectionCard css="md:flex-row-reverse pb-10 flex-col-reverse bg-white gap-5">
+        <SideTextCard
+          mainText="Send Money Directly to Bank and Mobile Money Accounts in 21+ African
+            Countries"
+          mainTextCss="text-[5vw] md:text-3xl sm:text-2xl leading-none"  
+          subText="Sending money back home just got a whole lot easier with Chipper."
+          subTextCss="text-[#1b0a2d]"
+        >
+          <h3 className="text-purple-600 font-semibold">
+            Choose Chipper Cash
+          </h3>
+        </SideTextCard>
         <img
           src="https://global-uploads.webflow.com/63c81b0c3ad929013f062d70/646f0c4b802baac4f23097b5_key_visual-p-800.webp"
           alt="phone"
           className="md:w-1/2"
         />
-        <div className="mt-8 md:w-1/2">
-          <h1 className="font-semibold text-4xl">
-            Send Money Directly to Bank and Mobile Money Accounts in 21+ African
-            Countries
-          </h1>
-          <p className="text-[#1b0a2d]">
-            Sending money back home just got a whole lot easier with Chipper.
-          </p>
-          <h3 className="md:mt-20 mt-5 text-purple-600 font-semibold">
-            Choose Chipper Cash
-          </h3>
-        </div>
-      </section>
-      <section className="bg-[#6642d1] flex justify-between items-center  px-5 md:px-24 overflow-hidden">
-        <div className="md:w-auto w-1/2">
-          <h1 className="md:font-semibold text-[#acfde4] font-medium md:text-6xl text-lg sm:text-2xl">
+      </SectionCard>
+      <section className="px-5 xl:px-24 md:px-10 bg-[#6642d1] flex justify-between items-center overflow-hidden relative">
+        <div className=" w-1/2 absolute md:relative z-0">
+          <h1 className="text-[6vw] md:text-5xl sm:text-2xl leading-none md:font-semibold text-[#acfde4] font-medium">
             Shop, Stream, and Subscribe Online.
           </h1>
-          <p className="font-light text-white md:text-3xl text-xl ">Pay globally with the Chipper Card</p>
+          <p className="font-light text-white md:text-3xl text-xl ">
+            Pay globally with the Chipper Card
+          </p>
         </div>
         <img
-          className="md: md:ml-0 ml-20 w-1/2 border-solid"
+          className=" md:ml-0 ml-52 w-full border-solid h-full md:w-1/2"
           src="https://global-uploads.webflow.com/63c81b0c3ad929013f062d70/646f10177899cb677d8e7510_Group%203705.webp"
           loading="lazy"
           sizes="(max-width: 479px) 97vw, (max-width: 767px) 96vw, (max-width: 991px) 81vw, 62vw"

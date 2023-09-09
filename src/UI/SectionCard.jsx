@@ -5,6 +5,6 @@ SectionCard.propTypes = {
 };
 export default function SectionCard({children,css}) {
   return (
-    <section className={`${css} md:flex md:justify-between md:items-center`}>{children}</section>
+    <section className={`${css} flex justify-between md:items-center px-5 py-5 xl:px-24 md:px-10`}>{children}</section>
   )
 }
