@@ -27,7 +27,7 @@ const companyDataList = [
 
 function CompanyNavBar() {
   return (
-    <Card style="gap-5 w-[400px] md:right-52 md:mt-8">
+    <Card style="gap-5 w-[400px] xl:right-52 xl:mt-8">
       {companyDataList.map((data) => (
         <Wrapper
           img={data.img}

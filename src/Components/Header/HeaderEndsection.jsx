@@ -1,7 +1,8 @@
 function HeaderEndSection() {
   return (
     <section className="py-16">
-      <h3 className="text-[#c1c4e5] pb-6 font-normal text-xl">
+      <h3 className="text-[#c1c4e5] pb-6 font-normal text-xl flex flex-col gap-2">
+        <span className="w-7 h-1 rounded bg-white"></span>
         Chipper Cash key figures
       </h3>
       <section className="flex justify-between items-baseline gap-6 flex-wrap">

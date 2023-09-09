@@ -1,11 +1,12 @@
+import HeaderCard from "../../UI/HeaderCard";
 import HeaderTopSection from "./HeaderTopSection";
 import HeaderEndSection from "./HeaderEndsection";
 function Header() {
   return (
-    <header className="bg-[#202654] px-5 py-5 md:px-24 md:py-4 text-[#fff] mt-16 pt-10 ">
+    <HeaderCard>
         <HeaderTopSection />
         <HeaderEndSection />
-    </header>
+    </HeaderCard>
   );
 }
 export default Header;

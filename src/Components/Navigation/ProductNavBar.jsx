@@ -84,7 +84,7 @@ const productDataList = [
 ];
 function ProductNavBar() {
   return (
-      <Card style="md:max-w-[60%] md:grid-cols-3 sm:grid-cols-2 md:right-20 h-[400px] gap-5 w-full md:mt-12">
+      <Card style="xl:max-w-[60%] xl:grid-cols-3 sm:grid-cols-2 xl:right-20 h-[400px] gap-5 w-full xl:mt-12">
         {productDataList.map(data=> <ProductNavCategory key={data.id} categoryName={data.name} content={data.content}/>)}
       </Card>
   );

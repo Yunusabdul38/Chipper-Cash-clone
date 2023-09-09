@@ -22,22 +22,22 @@ function NavBar() {
     setShowProduct(false)
   }
   return (
-    <nav className={`${showMenu?"z-10 h-screen":"h-16"} bg-[#202654] text-white items-start flex justify-between flex-col md:items-center px-5 py-5 md:px-24 md:py-4 capitalize md:flex-row fixed w-full gap-7 md:gap-0 top-0 transition-all ease-out`}>
+    <nav className={`${showMenu?"z-10 h-screen":"h-16"} bg-[#202654] text-white items-start flex justify-between flex-col xl:items-end px-5 py-5 md:px-10   xl:px-24 xl:py-4 capitalize xl:flex-row sticky w-full gap-7 xl:gap-0 top-0 transition-all ease-out`}>
       <img src={Logo} alt="chipper cash logo" className="w-28"/>
-      <ul className={`md:flex justify-start md:justify-between md:flex-row flex-col md:items-center gap-3 items-start md:h-auto w-full md:w-auto ${showMenu?"flex h-screen":"hidden"}`}>
-        <li className="w-full md:w-auto flex flex-col relative" onClick={showProducthandle}>
-          <div>products<span className="float-right md:float-none md:ml-3">{downIcon}</span></div>
+      <ul className={`mt-12 xl:flex justify-start xl:justify-between xl:flex-row flex-col xl:items-center gap-3 items-start xl:h-auto w-full xl:w-auto ${showMenu?"flex h-screen":"hidden"}`}>
+        <li className="w-full xl:w-auto flex flex-col" onClick={showProducthandle} >
+          <div>products<span className="float-right xl:float-none xl:ml-3">{downIcon}</span></div>
           {showProduct && <ProductNavBar/>}
         </li>
-        <li className="w-full md:w-auto " onClick={showCompanyHandle}>
-          <div>company <span className="float-right md:float-none md:ml-3">{downIcon}</span></div>
+        <li className="w-full xl:w-auto" onClick={showCompanyHandle}>
+          <div>company <span className="float-right xl:float-none xl:ml-3">{downIcon}</span></div>
           {showCompany && <CompanyNavBar />}
         </li>
         <li>blogs</li>
         <li>supports</li>
         <button className="transition-all ease-linear duration-150 delay-0 hover:bg-[#393589] capitalize border-solid border-gray-500 border-[1px] px-4 py-2 rounded-[10px]">download</button>
       </ul>
-      <div className="md:hidden absolute top-4 right-5 text-3xl transition-all ease-out" onClick={()=>{
+      <div className="xl:hidden absolute top-4 right-5 md:right-10 text-3xl transition-all ease-out" onClick={()=>{
         setShowMenu(prev=>!prev)
       }}>{showMenu?xIcon:barsIcon}</div>
     </nav>
