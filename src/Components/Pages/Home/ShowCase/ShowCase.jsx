@@ -1,7 +1,7 @@
 import TopSection from "./TopSection";
 import Section from "./Section"
-import SectionCard from "../../../UI/SectionCard";
-import SideTextCard from "../../../UI/SideTextCard";
+import SectionCard from "../../../../UI/SectionCard";
+import SideTextCard from "../../../../UI/SideTextCard";
 function Showcase() {
   return (
     <>

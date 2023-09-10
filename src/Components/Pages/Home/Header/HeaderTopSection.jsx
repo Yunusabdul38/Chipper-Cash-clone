@@ -1,5 +1,5 @@
-import SectionCard from "../../../UI/SectionCard";
-import SideTextCard from "../../../UI/SideTextCard";
+import SectionCard from "../../../../UI/SectionCard";
+import SideTextCard from "../../../../UI/SideTextCard";
 import headerImage from "./headerImg.svg";
 
 function HeaderTopSection() {
