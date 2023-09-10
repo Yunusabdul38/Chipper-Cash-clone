@@ -13,8 +13,9 @@ function Showcase() {
           subText="Sending money back home just got a whole lot easier with Chipper."
           subTextCss="text-[rgba(44,22,68,.9)]"
         >
-          <h3 className="mt-5 text-purple-600 font-semibold">
-            Choose Chipper Cash
+          <h3 className="mt-5 text-purple-600 font-semibold flex items-center gap-2">
+          <span className="w-5 h-1 rounded bg-purple-600"></span>
+          Choose Chipper Cash
           </h3>
         </SideTextCard>
         <img
