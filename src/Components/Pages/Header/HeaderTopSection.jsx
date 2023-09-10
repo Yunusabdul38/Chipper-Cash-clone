@@ -1,5 +1,5 @@
-import SectionCard from "../../UI/SectionCard";
-import SideTextCard from "../../UI/SideTextCard";
+import SectionCard from "../../../UI/SectionCard";
+import SideTextCard from "../../../UI/SideTextCard";
 import headerImage from "./headerImg.svg";
 
 function HeaderTopSection() {
@@ -7,11 +7,11 @@ function HeaderTopSection() {
     <SectionCard>
       <SideTextCard
         mainText={`move your money freely`}
-        css="md:w-9/12 md:justify-end"
         mainTextCss="text-[#d4d6eb] capitalize text-[10vw] md:text-4xl sm:text-3xl leading-none	"
         subText=" Your free Chipper account unlocks international transfers, payment
         cards and investing for Africans."
         subTextCss="text-[#c1c4e5] text-[4vw] md:text-lg sm:text-xl leading-none sm:w-4/5 md:w-full"
+        css="gap-8"
       >
         <aside className="xl:flex justify-between items-center gap-5 hidden">
           <img

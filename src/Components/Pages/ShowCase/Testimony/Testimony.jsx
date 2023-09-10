@@ -8,7 +8,7 @@ function Testimony() {
         content="“The best virtual bank ever…I have been using since 2020 and gosh it’s so good… it’s fast and reliable…”"
         date="10 February 2023"
       />
-      <div className=" grid gap-5 md:grid-cols-2">
+      <div className=" grid gap-5 xld:grid-cols-2">
         <TestimonyDetails
           img="data:image/webp;base64,UklGRnYDAABXRUJQVlA4WAoAAAAQAAAAdgAARwAAQUxQSMYAAAABV6AQkiQ3efkMziAbvMJHRMDlJ3kezoAb27bq5ghjakCxqlApjBlTBWrh3VBk31On4V0ds5OI/k8AUBtQcdwEgNqdoiUAParOgdpdhlV0qdvGWWiOixALd6US/42clEsp1lNshcHO0LDgD82kgoNciqRLxT6IPZi9I3u2d5qUS+WP8FdM4nVXMiqFfkVMzl2FpDM4xkiaiDO+kvIzvcyUv3JSLlP5n8GT1FWpeBY6oiPURu1JpwwsZI4Aak8qZQBorSV2ZQBWUDggigIAADARAJ0BKncASAA+bTCWSCQioiEidVtwgA2JZADOckr+gbJZxr8gPxy5OnuThvv3D7cveX+jGKA/Uf9QPeq/pPQzdYB6AH6zemh7KX7W+ircxq53rAHCC3tJs/I9M2kV8UjRr6Ck33OPJUdxfbnHB3fDANfveNl4UvnAtk/KgU3Ys5nv4D4DYL0epjeBZxblOxAAAP7xlX/LRWcDXPX22DCN+cs2rmQjDrinIADMnrXpPD+s08f0XcoTX1udsttwq7QX2HoYP2E+5c74FKq5SJuqhv6SanetnPSmBmHyFVH6v8iMJeQIYPCb+a6D3fNtKc9Ppt9LlUDX/wm90nYdX8zZ18Kq91/y6hfZIKEVfH97eeS13jV1lSF2X6o45rzChdXzIxbA591EqIkq9ty4phiW32FgXyFPfxLEP1eq05sq/J3ItsrDq7+nPWwe5m3xVtqrHBsQtwluxn3oYBDw8RKWyiTqKOIFNZe02Xive8PcTdLpvW/1Lqyd1Mhleud4QAXDG4xJIy14yuK4NZW6b/AMtciibUy2jrRnZmIXpYDdpcOwXyRP/jEa7f4ZH/bNYgrlyaQnrI8rGc+hcm94RxAMfmThnp+7HW0yUhpiPjpb+Vu+L8c4BUncYZxZX8K4Qfx2XTXAvn/jjfQmu+lFrZbbtUEeI2/IJAB32IQMS6V3/G4E+aB3FJWl4QrFDi15YPt17/9NfPuljQg1vfSQdl55XyEjUYp9cr+jmsqllhGvY5yMZRuQwsbjEt3USYrGJ3Oek8sIFUrhKdXHU6uDJ0GRWNBFsVx0LyACKF50ps+a4IjO6j2RBEGBIEB8M5LVYAAGFNrKOy/ELvMPtdaEYrzqKqtz0N3lAAAA"
           alt="GHANA flag"

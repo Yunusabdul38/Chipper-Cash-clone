@@ -1,4 +1,4 @@
-import HeaderCard from "../../UI/HeaderCard";
+import HeaderCard from "../../../UI/HeaderCard"
 import HeaderTopSection from "./HeaderTopSection";
 import HeaderEndSection from "./HeaderEndsection";
 function Header() {

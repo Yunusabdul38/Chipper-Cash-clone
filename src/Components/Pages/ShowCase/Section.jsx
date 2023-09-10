@@ -8,7 +8,10 @@ function Section() {
             Chipper’s story is “chipping away” at hard problems and unlocking
             global opportunities.
           </p>
-          <p>Read more about our journey</p>
+          <p className="text-purple-600 font-semibold flex items-center gap-2">
+          <span className="w-5 h-1 rounded bg-purple-600"></span>
+          Read more about our journey
+          </p>
         </div>
         <div className="grid grid-cols-3 gap-x-24 gap-y-10 items-center">
           <img
@@ -56,8 +59,9 @@ function Section() {
             With Chipper Stocks, you can trade fractional shares of global
             companies like Google, Visa, and Walmart starting with just $1.
           </p>
-          <p className="text-purple-600 font-semibold">
-            Get started with Chipper Stocks
+          <p className="text-purple-600 font-semibold flex items-center gap-2">
+          <span className="w-5 h-1 rounded bg-purple-600"></span>
+          Get started with Chipper Stocks
           </p>
         </div>
       </section>
@@ -80,7 +84,8 @@ function Section() {
           <h1 className="text-[#1b0a2d] text-2xl font-semibold">
             Football Culture Across Africa
           </h1>
-          <p className="text-purple-600 font-semibold">
+          <p className="text-purple-600 font-semibold flex items-center gap-2">
+          <span className="w-5 h-1 rounded bg-purple-600"></span>
             Take a photographic journey
           </p>
         </div>
