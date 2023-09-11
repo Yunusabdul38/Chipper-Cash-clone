@@ -1,5 +1,6 @@
 import SectionCard from "../../../UI/SectionCard";
 import SideTextCard from "../../../UI/SideTextCard";
+import Button from "../../../UI/Button";
 export default function Section() {
   return (
     <section>
@@ -17,9 +18,7 @@ export default function Section() {
           mainText="Shop, Stream, and Subscribe Globally"
           subText="Shop online with the Chipper Card around the world."
         >
-          <button className="bg-[#6945d8] capitalize text-white py-3 px-5 rounded-[1rem] font-medium hover:grayscale transition">
-            get your chipper card
-          </button>
+          <Button text="get your chipper card" />
         </SideTextCard>
       </SectionCard>
       <SectionCard css="md:flex-row-reverse flex-col gap-8 items-center py-20">
@@ -66,9 +65,7 @@ export default function Section() {
           mainText="Digitally Native"
           subText="A digital card for your digital life"
         >
-          <button className="bg-[#6945d8] capitalize text-white py-3 px-5 rounded-[1rem] font-medium hover:grayscale transition">
-            get your chipper card
-          </button>
+           <Button text="get your chipper card" />
         </SideTextCard>
       </SectionCard>
     </section>

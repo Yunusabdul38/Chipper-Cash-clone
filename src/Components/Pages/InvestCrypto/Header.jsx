@@ -3,7 +3,7 @@ import SectionCard from "../../../UI/SectionCard";
 export default function Header() {
   return (
     <HeaderCard>
-      <SectionCard css="px-5 pb-0 xl:px-24 md:px-10  flex-col gap-8 md:flex-row-reverse">
+      <SectionCard css="px-5 pb-0 xl:px-24 md:px-10  flex-col-reverse gap-8 md:flex-row-reverse">
         <img
           src="https://global-uploads.webflow.com/63c81b0c3ad929013f062d70/63e2162339035a365af8726e_chipper%20crypto%20hand.png"
           loading="lazy"

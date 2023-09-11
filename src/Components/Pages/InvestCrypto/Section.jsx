@@ -1,42 +1,81 @@
 import SectionCard from "../../../UI/SectionCard";
-import SideTextCard from "../../../UI/SideTextCard";
+import SummaryList from "./SummaryList";
+import List from "./List";
+
 export default function Section() {
   return (
     <section>
-      <div className="bg-[#eff0fe]">
+      <div className="  bg-[#eff0fe] py-4">
         <SectionCard css="md:flex-row flex-col gap-8 items-center py-20">
           <img
-            src="https://global-uploads.webflow.com/63c81b0c3ad929013f062d70/63c81b0c3ad929e87b062df1_cash-back.webp"
+            src="https://global-uploads.webflow.com/63c81b0c3ad929013f062d70/63c81b0c3ad929a28f062e77_over-ten.svg"
             loading="lazy"
-            sizes="(max-width: 767px) 90vw, (max-width: 991px) 43vw, 47vw"
-            srcSet="https://global-uploads.webflow.com/63c81b0c3ad929013f062d70/63c81b0c3ad929e87b062df1_cash-back-p-500.png 500w, https://global-uploads.webflow.com/63c81b0c3ad929013f062d70/63c81b0c3ad929e87b062df1_cash-back-p-800.png 800w, https://global-uploads.webflow.com/63c81b0c3ad929013f062d70/63c81b0c3ad929e87b062df1_cash-back-p-1080.png 1080w, https://global-uploads.webflow.com/63c81b0c3ad929013f062d70/63c81b0c3ad929e87b062df1_cash-back.webp 1152w"
-            alt=""
-            className="md:w-2/5"
+            alt="Crypto coins"
+            className="md:w-2/5 w-[80%]"
           />
-          <aside>
-            <h1 className="font-semibold text-4xl text-[#090b0e]">Over 10 Crypto Coins Available Now</h1>
-            <ul>
-              <li>
-                Buy and sell 10+ crypto coins including Bitcoin, Ethereum, USDC,
-                Avax, Matic, Solana, and Doge
-              </li>
-              <li>Available for purchase 24/7 with real-time pricing</li>
-              <li>Invest in Stable-coins including USDC</li>
-            </ul>
-            <button className="bg-[#6945d8] capitalize text-white py-3 px-5 rounded-[1rem] font-medium hover:grayscale transition">
-              get your chipper card
-            </button>
-          </aside>
+          <SummaryList header="Over 10 Crypto Coins Available Now" headerCss="text-[#090b0e]" >
+            <List
+              element={
+                <ul className="list-disc grid gap-3  text-sm">
+                  <li>
+                    Buy and sell 10+ crypto coins including Bitcoin, Ethereum,
+                    USDC, Avax, Matic, Solana, and Doge
+                  </li>
+                  <li>Available for purchase 24/7 with real-time pricing</li>
+                  <li>Invest in Stable-coins including USDC</li>
+                  <li>Instant trade execution</li>
+                </ul>
+              }
+            />
+          </SummaryList>
         </SectionCard>
         <SectionCard css="md:flex-row-reverse flex-col gap-8 items-center py-20">
           <img
-            src="https://global-uploads.webflow.com/63c81b0c3ad929013f062d70/63c81b0c3ad929a011062df2_shop-globally.webp"
+            src="https://global-uploads.webflow.com/63c81b0c3ad929013f062d70/63c81b0c3ad929b94d062e71_send-receive-globally.svg"
             loading="lazy"
-            sizes="(max-width: 767px) 90vw, (max-width: 991px) 43vw, 47vw"
-            srcSet="https://global-uploads.webflow.com/63c81b0c3ad929013f062d70/63c81b0c3ad929a011062df2_shop-globally-p-500.png 500w, https://global-uploads.webflow.com/63c81b0c3ad929013f062d70/63c81b0c3ad929a011062df2_shop-globally.webp 990w"
-            alt=""
-            className="md:w-2/5"
+            alt="Send and receive globally"
+            className="md:w-2/5 w-[80%]"
           />
+          <SummaryList header="Send and Receive Globally" headerCss="text-[#090b0e]" >
+            <List
+              element={
+                <ul className="list-disc grid gap-3 text-sm" >
+                  <li>
+                    On Chain Currencies: BTC, ETH, USDC, Doge Send/receive from
+                    any
+                  </li>
+                  <li>
+                    third party wallet address in Uganda and South Africa
+                    Instantly cash
+                  </li>
+                  <li>out crypto to local currencies with no fees</li>
+                </ul>
+              }
+            />
+          </SummaryList>
+        </SectionCard>
+      </div>
+      <div className="bg-[#2f3370]">
+        <SectionCard css="md:flex-row flex-col gap-8 items-center py-20">
+          <img
+            src="https://global-uploads.webflow.com/63c81b0c3ad929013f062d70/63c81b0c3ad92935c3062e72_cash-to-crypto.svg"
+            loading="lazy"
+            alt="Convert cash to crypto"
+            className="md:w-2/5 w-[80%]"
+          />
+          <SummaryList header="Convert Cash to Crypto and Crypto to Cash 24/7" headerCss="text-[#fff]" >
+            <List
+              element={
+                <ul className="list-disc grid gap-3  text-sm text-[#c1c4e5]">
+                  <li>
+                    Connect your MoMo or Bank Accounts to fund and cash out
+                  </li>
+                  <li>Buy crypto using your Chipper balance</li>
+                  <li>Receive crypto payments and convert at the best rates</li>
+                </ul>
+              }
+            />
+          </SummaryList>
         </SectionCard>
       </div>
     </section>
