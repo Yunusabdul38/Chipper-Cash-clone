@@ -5,6 +5,8 @@ import Home from "./Components/Pages/Home/Home"
 import ChipperCard from "./Components/Pages/ChipperCard/ChipperCard"
 import SendReciveMoney from "./Components/Pages/SendReceived/SendReciveMoney";
 import InvestCrypto from "./Components/Pages/InvestCrypto/InvestCrypto";
+import InvestStock from "./Components/Pages/InvestStock/InvestStock";
+import NetworkApi from "./Components/Pages/NetworkApi/NetworkApi";
 function App() {
   return (
     <Fragment>
@@ -12,7 +14,9 @@ function App() {
       {/* <Home /> */}
       {/* <SendReciveMoney /> */}
       {/* <ChipperCard/> */}
-      <InvestCrypto />
+      {/* <InvestCrypto /> */}
+      {/* <InvestStock /> */}
+      <NetworkApi/>
       <Footer/>
     </Fragment>
   );

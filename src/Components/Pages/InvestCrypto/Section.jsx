@@ -1,6 +1,6 @@
 import SectionCard from "../../../UI/SectionCard";
-import SummaryList from "./SummaryList";
-import List from "./List";
+import SummaryList from "../../../UI/SummaryList";
+import List from "../../../UI/List";
 
 export default function Section() {
   return (
@@ -13,7 +13,7 @@ export default function Section() {
             alt="Crypto coins"
             className="md:w-2/5 w-[80%]"
           />
-          <SummaryList header="Over 10 Crypto Coins Available Now" headerCss="text-[#090b0e]" >
+          <SummaryList header="Over 10 Crypto Coins Available Now" headerCss="text-[#090b0e]"  text="start investing today">
             <List
               element={
                 <ul className="list-disc grid gap-3  text-sm">
@@ -36,7 +36,7 @@ export default function Section() {
             alt="Send and receive globally"
             className="md:w-2/5 w-[80%]"
           />
-          <SummaryList header="Send and Receive Globally" headerCss="text-[#090b0e]" >
+          <SummaryList header="Send and Receive Globally" headerCss="text-[#090b0e]"  text="start investing today">
             <List
               element={
                 <ul className="list-disc grid gap-3 text-sm" >
@@ -63,7 +63,7 @@ export default function Section() {
             alt="Convert cash to crypto"
             className="md:w-2/5 w-[80%]"
           />
-          <SummaryList header="Convert Cash to Crypto and Crypto to Cash 24/7" headerCss="text-[#fff]" >
+          <SummaryList header="Convert Cash to Crypto and Crypto to Cash 24/7" headerCss="text-[#fff]"  text="start investing today">
             <List
               element={
                 <ul className="list-disc grid gap-3  text-sm text-[#c1c4e5]">
