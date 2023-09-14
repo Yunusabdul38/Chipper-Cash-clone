@@ -11,6 +11,7 @@ const productDataList = [
         maintext: "send & receive cash",
         subtext: "cash transfer in a few taps",
         imgalt: "send-and-receive",
+        link:"/sendReceiveMoney"
       },
       {
         id:crypto.randomUUID(),
@@ -18,6 +19,7 @@ const productDataList = [
         maintext: "chipper card",
         subtext: "digital card for your digital life",
         imgalt: "card",
+        link:"/chipperCard"
       },
     ],
   },
@@ -31,6 +33,7 @@ const productDataList = [
         maintext: "invest: crypto",
         subtext: "buy.sel & send/receive crypto",
         imgalt: "crypto",
+        link:"/investCrypto"
       },
       {
         id:crypto.randomUUID(),
@@ -38,6 +41,7 @@ const productDataList = [
         maintext: "invest: stocks",
         subtext: "start investing with USD",
         imgalt: "stocks",
+        link:"/investStock"
       },
     ],
   },
@@ -51,6 +55,7 @@ const productDataList = [
         maintext: "network API",
         subtext: "payments at scale",
         imgalt: "network-api",
+        link:"/networkApi"
       },
       {
         id:crypto.randomUUID(),
@@ -58,6 +63,7 @@ const productDataList = [
         maintext: "chipper checkout",
         subtext: "business payments",
         imgalt: "checkout",
+        link:"/businessCheckout"
       },
     ],
   },
@@ -71,6 +77,7 @@ const productDataList = [
         maintext: "bill pay",
         subtext: "payments at scale",
         imgalt: "bill%20pay",
+        link:"/billPay"
       },
       {
         id:crypto.randomUUID(),
@@ -78,6 +85,7 @@ const productDataList = [
         maintext: "airtime",
         subtext: "instant airtime for less",
         imgalt: "airtime",
+        link:"/airtime"
       },
     ],
   },
