@@ -38,6 +38,7 @@ function CompanyNavBar() {
           maintext={data.maintext}
           subtext={data.subtext}
           imgalt={data.imgalt}
+          style=" hover:bg-slate-300 hover:w-fit hover:rounded px-3 transition"
         />
         </Links>
       ))}

@@ -3,7 +3,7 @@ import TopFooterSection from "./TopFooterSection";
 import Images from "../../UI/Images";
 function Footer() {
   return (
-    <footer className="mt-72 text-[#c1c4e5] capitalize px-5 pt-48  pb-7 xl:px-24 md:px-10  bg-[#202654] grid gap-8">
+    <footer className="mt-72 text-[#c1c4e5] capitalize px-5 pt-48  pb-7 xl:px-24 md:px-10  bg-[#202654] grid gap-8 relative bottom-0 z-0">
       <TopFooterSection />
       <div className="border-b-[1px] border-[#c1c4e5] grid gap-8 xl:flex xl:justify-between">
       <div className="grid gap-4 xl:gap-0">

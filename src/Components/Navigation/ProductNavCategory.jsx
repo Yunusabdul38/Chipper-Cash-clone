@@ -20,6 +20,7 @@ function ProductNavCategory({ categoryName, content }) {
               subtext={data.subtext}
               imgalt={data.imgalt}
               key={data.id}
+              style=" hover:bg-slate-300 hover:w-fit hover:rounded px-1 transition"
             />
           </Links>
         ))}

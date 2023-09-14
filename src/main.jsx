@@ -7,7 +7,7 @@ import InvestCrypto from './Components/Pages/InvestCrypto/InvestCrypto.jsx'
 import InvestStock from './Components/Pages/InvestStock/InvestStock.jsx'
 import NetworkApi from './Components/Pages/NetworkApi/NetworkApi.jsx'
 import SendReciveMoney from './Components/Pages/SendReceived/SendReciveMoney.jsx'
-
+import ErrorPage from './Components/Pages/ErrorPage.jsx'
 import { createBrowserRouter,RouterProvider } from 'react-router-dom'
 import './index.css'
 
@@ -15,6 +15,7 @@ const route =createBrowserRouter([
   {
     path:"/",
     element:<App />,
+    errorElement:<ErrorPage/>,
     children:[
       {
         path:"/",

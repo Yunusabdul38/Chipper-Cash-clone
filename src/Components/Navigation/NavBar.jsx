@@ -23,7 +23,7 @@ function NavBar() {
     setShowProduct(false)
   }
   return (
-    <nav className={`${showMenu?"z-10 h-screen":"h-16"} bg-[#202654] text-white items-start flex justify-between flex-col xl:items-end px-5 py-5 md:px-10   xl:px-24 xl:py-4 capitalize xl:flex-row sticky w-full gap-7 xl:gap-0 top-0 transition-all ease-out`}>
+    <nav className={`${showMenu?"h-screen":"h-16"} bg-[#202654] text-white items-start flex justify-between flex-col xl:items-end px-5 py-5 md:px-10   xl:px-24 xl:py-4 capitalize xl:flex-row sticky w-full gap-7 xl:gap-0 top-0 transition-all ease-out z-10`}>
       <Link to="/">
       <img src={Logo} alt="chipper cash logo" className="w-28 cursor-pointer"/>
       </Link>
