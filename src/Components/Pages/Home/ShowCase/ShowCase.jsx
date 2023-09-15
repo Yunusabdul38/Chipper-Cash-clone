@@ -1,5 +1,6 @@
 import TopSection from "./TopSection";
 import Section from "./Section"
+import HoverText from "../../../../UI/HoverText"
 import SectionCard from "../../../../UI/SectionCard";
 import SideTextCard from "../../../../UI/SideTextCard";
 function Showcase() {
@@ -13,10 +14,7 @@ function Showcase() {
           subText="Sending money back home just got a whole lot easier with Chipper."
           subTextCss="text-[rgba(44,22,68,.9)]"
         >
-          <h3 className="mt-5 text-purple-600 font-semibold flex items-center gap-2">
-          <span className="w-5 h-1 rounded bg-purple-600"></span>
-          Choose Chipper Cash
-          </h3>
+        <HoverText>Choose Chipper Cash</HoverText>
         </SideTextCard>
         <img
           src="https://global-uploads.webflow.com/63c81b0c3ad929013f062d70/646f0c4b802baac4f23097b5_key_visual-p-800.webp"

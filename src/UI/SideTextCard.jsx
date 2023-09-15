@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 SideTextCard.propTypes = {
   mainText: PropTypes.string,
   subText: PropTypes.string,
-  children: PropTypes.array,
+  children: PropTypes.node,
   mainTextCss:PropTypes.string,
   subTextCss:PropTypes.string,
   css:PropTypes.string

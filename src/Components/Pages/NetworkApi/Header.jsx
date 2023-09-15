@@ -4,10 +4,10 @@ export default function Header() {
   return (
     <HeaderCard>
       <div className=" md:w-3/5 grid gap-5 px-5 py-20 xl:px-24 md:px-10">
-        <h1 className="text-white capitalize font-semibold text-[10vw] md:text-5xl sm:text-4xl leading-none">
+        <div className="text-white capitalize font-semibold text-[10vw] md:text-5xl sm:text-4xl leading-none">
           Power your 
          <h2 className="text-[#f87e5c]"> &lt;p&gt;</h2>Payments in Africa <h2 className="text-[#f87e5c]">&lt;/p&gt;</h2>
-        </h1>
+        </div>
         <p className="text-[#c1c4e5] text-[4vw] md:text-lg sm:text-xl leading-none">
         Chipper Network API is a payment method that gives you access to 5Mn+ KYC verified customers. We empower you to accept payments and send payouts across all our markets.
 

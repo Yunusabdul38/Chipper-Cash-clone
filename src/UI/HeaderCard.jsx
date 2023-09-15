@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 HeaderCard.propTypes = {
-  children: PropTypes.array,
+  children: PropTypes.node,
 };
 export default function HeaderCard({ children }) {
   return (

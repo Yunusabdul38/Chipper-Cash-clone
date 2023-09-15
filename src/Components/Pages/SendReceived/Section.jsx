@@ -1,5 +1,6 @@
 import SectionCard from "../../../UI/SectionCard";
 import SideTextCard from "../../../UI/SideTextCard";
+import HoverText from "../../../UI/HoverText";
 import Modal from "./Modal";
 export default function Section() {
   return (
@@ -18,10 +19,7 @@ export default function Section() {
           mainText="Lightning-fast, Secure Money Transfers"
           subText="Enjoy free transfers and the lowest cross-border rates. More money stays in your pocket, and more arrives in theirs."
         >
-          <h3 className="mt-5 text-purple-600 font-semibold flex items-center gap-2">
-            <span className="w-5 h-1 rounded bg-purple-600"></span>
-            Get started with Chipper Cash
-          </h3>
+          <HoverText>Get started with Chipper Cash</HoverText>
         </SideTextCard>
       </SectionCard>
       <SectionCard css="md:flex-row-reverse bg-[#eff0fe] flex-col gap-8 items-center py-14">
@@ -38,10 +36,7 @@ export default function Section() {
           mainText="Sending Money is as Easy as Sending a Text"
           subText="Securely link any mobile money or bank account. Cash in and cash out at no cost."
         >
-          <h3 className="mt-5 text-purple-600 font-semibold flex items-center gap-2">
-            <span className="w-5 h-1 rounded bg-purple-600"></span>
-            Get started with Chipper Cash
-          </h3>
+           <HoverText>Get started with Chipper Cash</HoverText>
         </SideTextCard>
       </SectionCard>
       <SectionCard css="md:flex-row flex-col gap-8 items-center py-16">
@@ -58,10 +53,7 @@ export default function Section() {
           mainText="Instant Airtime for Less"
           subText="Get 2% cashback on Airtime, every time. Instantly top-up from anywhere, on any network. Send airtime to anyone across Africa."
         >
-          <h3 className="mt-5 text-purple-600 font-semibold flex items-center gap-2">
-            <span className="w-5 h-1 rounded bg-purple-600"></span>
-            Get started with Chipper Cash
-          </h3>
+           <HoverText>Get started with Chipper Cash</HoverText>
         </SideTextCard>
       </SectionCard>
       <SectionCard css="md:flex-row-reverse flex-col">
