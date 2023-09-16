@@ -77,7 +77,7 @@ const productDataList = [
         maintext: "bill pay",
         subtext: "payments at scale",
         imgalt: "bill%20pay",
-        link:"/billPay"
+        link:"billPay"
       },
       {
         id:crypto.randomUUID(),
@@ -85,7 +85,7 @@ const productDataList = [
         maintext: "airtime",
         subtext: "instant airtime for less",
         imgalt: "airtime",
-        link:"/airtime"
+        link:"airtime"
       },
     ],
   },

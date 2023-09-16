@@ -4,6 +4,6 @@ HeaderCard.propTypes = {
 };
 export default function HeaderCard({ children }) {
   return (
-    <header className="z-50 bg-[#202654] text-[#fff] pt-10">{children}</header>
+    <header className="z-50 bg-[#202654] text-[#fff] pt-10 header">{children}</header>
   );
 }
