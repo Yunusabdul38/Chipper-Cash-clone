@@ -39,7 +39,7 @@ export default function Section() {
            <HoverText>Get started with Chipper Cash</HoverText>
         </SideTextCard>
       </SectionCard>
-      <SectionCard css="md:flex-row flex-col gap-8 items-center py-16">
+      <SectionCard css="md:flex-row flex-col gap-8 items-center py-16 airtime">
         <img
           src="https://global-uploads.webflow.com/63c81b0c3ad929013f062d70/63c81b0c3ad92902b2062dd8_instant-airtime.webp"
           loading="lazy"
@@ -56,7 +56,7 @@ export default function Section() {
            <HoverText>Get started with Chipper Cash</HoverText>
         </SideTextCard>
       </SectionCard>
-      <SectionCard css="md:flex-row-reverse flex-col">
+      <SectionCard css="md:flex-row-reverse flex-col paybill">
         <div className="md:w-2/5 py-10 grid gap-4">
           <Modal
             src="https://global-uploads.webflow.com/63c81b0c3ad929013f062d70/63c81b0c3ad929dbb0062e6e_Chipper-icon1Asset%201.svg"

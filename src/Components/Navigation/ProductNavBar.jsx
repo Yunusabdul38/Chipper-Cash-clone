@@ -4,6 +4,7 @@ const productDataList = [
   {
     name: "payment",
     id:crypto.randomUUID(),
+    to:"link",
     content: [
       {
         id:crypto.randomUUID(),
@@ -11,7 +12,7 @@ const productDataList = [
         maintext: "send & receive cash",
         subtext: "cash transfer in a few taps",
         imgalt: "send-and-receive",
-        link:"/sendReceiveMoney"
+        link:"/sendReceiveMoney",
       },
       {
         id:crypto.randomUUID(),
@@ -19,13 +20,14 @@ const productDataList = [
         maintext: "chipper card",
         subtext: "digital card for your digital life",
         imgalt: "card",
-        link:"/chipperCard"
+        link:"/chipperCard",
       },
     ],
   },
   {
     name: "investing",
     id:crypto.randomUUID(),
+    to:"link",
     content: [
       {
         id:crypto.randomUUID(),
@@ -33,7 +35,7 @@ const productDataList = [
         maintext: "invest: crypto",
         subtext: "buy.sel & send/receive crypto",
         imgalt: "crypto",
-        link:"/investCrypto"
+        link:"/investCrypto",
       },
       {
         id:crypto.randomUUID(),
@@ -41,13 +43,14 @@ const productDataList = [
         maintext: "invest: stocks",
         subtext: "start investing with USD",
         imgalt: "stocks",
-        link:"/investStock"
+        link:"/investStock",
       },
     ],
   },
   {
     name: "business",
     id:crypto.randomUUID(),
+    to:"link",
     content: [
       {
         id:crypto.randomUUID(),
@@ -55,7 +58,7 @@ const productDataList = [
         maintext: "network API",
         subtext: "payments at scale",
         imgalt: "network-api",
-        link:"/networkApi"
+        link:"/networkApi",
       },
       {
         id:crypto.randomUUID(),
@@ -63,13 +66,14 @@ const productDataList = [
         maintext: "chipper checkout",
         subtext: "business payments",
         imgalt: "checkout",
-        link:"/businessCheckout"
+        link:"/businessCheckout",
       },
     ],
   },
   {
     name: "features",
     id:crypto.randomUUID(),
+    to:"scroll",
     content: [
       {
         id:crypto.randomUUID(),
@@ -77,7 +81,7 @@ const productDataList = [
         maintext: "bill pay",
         subtext: "payments at scale",
         imgalt: "bill%20pay",
-        link:"billPay"
+        link:"paybill",
       },
       {
         id:crypto.randomUUID(),
@@ -85,7 +89,7 @@ const productDataList = [
         maintext: "airtime",
         subtext: "instant airtime for less",
         imgalt: "airtime",
-        link:"airtime"
+        link:"airtime",
       },
     ],
   },
@@ -93,7 +97,7 @@ const productDataList = [
 function ProductNavBar() {
   return (
       <Card style="xl:max-w-[60%] xl:grid-cols-3 sm:grid-cols-2 xl:right-20 h-[400px] gap-5 w-full xl:mt-12">
-        {productDataList.map(data=> <ProductNavCategory key={data.id} categoryName={data.name} content={data.content}/>)}
+        {productDataList.map(data=> <ProductNavCategory key={data.id} categoryName={data.name} content={data.content} to={data.to}/>)}
       </Card>
   );
 }
